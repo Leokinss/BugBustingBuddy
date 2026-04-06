@@ -1,0 +1,18 @@
+ANDROID_CAPABILITIES:
+  platformName: Android
+  deviceName: emulator-5554
+  app: ../releases/mda-2.2.0-25.apk
+  automationName: UiAutomator2
+  fullReset: true
+
+IOS_CAPABILITIES:
+  platformName: iOS
+  deviceName: iPhone 14
+  platformVersion: "17.0"
+  automationName: XCUITest
+  app: ../releases/SauceLabs-Demo-App.ipa
+  bundleId: com.saucelabs.demoapp
+  # Uncomment and set if using a real device
+  # udid: YOUR_DEVICE_UDID
+  # xcodeOrgId: YOUR_XCODE_ORG_ID
+  # xcodeSigningId: iPhone Developer
