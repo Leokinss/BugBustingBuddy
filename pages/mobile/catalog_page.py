@@ -26,7 +26,6 @@ class CatalogPage(BasePage):
 
     def add_to_cart(self, product_name: str) -> None:
         locator = self.get_product_by_name(product_name)
-        locator = self.get_product_by_name(product_name)
         
         # move 50 pixels above the element and click because only the image can be clicked
         self.click_offset(locator, y_offset=-50)
