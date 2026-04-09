@@ -1,9 +1,11 @@
 Work in progress
 
-Automation framework using Page Object Model (POM) and Gherkin syntax
+Automation framework using Page Object Model (POM) and Gherkin syntax with Pytest-BDD
 
-Steps to run
+Steps to run:
 py -3.14 -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 pytest -s -v
+
+Need Appium server and Android emulator for now

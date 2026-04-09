@@ -20,15 +20,7 @@ class NavigationPage(BasePage):
         self.click(self.NAV_LOGIN_BUTTON)
     
     def is_logout_button_visible(self):
-        try:
-            self.find(self.NAV_LOGOUT_BUTTON, timeout=5)
-            return True
-        except TimeoutException:
-            return False
+        return self.is_element_visible(self.NAV_LOGOUT_BUTTON)
     
     def is_app_logo_and_name_visible(self):
-        try:
-            self.find(self.APP_LOGO_AND_NAME, timeout=5)
-            return True
-        except TimeoutException:
-            return False
+        return self.is_element_visible(self.APP_LOGO_AND_NAME, timeout=10)
